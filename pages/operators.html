@@ -1,0 +1,15 @@
+<div class="w3-container w3-sand">
+    <h2>Operators</h2>
+</div>
+<ul class="w3-ul w3-card-4">
+    <li ng-repeat="op in operators" class="w3-bar">
+        <img src="{{op.profile_image_href}}" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+        <div class="w3-bar-item">
+            <span class="w3-large">{{op.title}}</span><br>
+            <span>ID: {{op.id}}</span>
+        </div>
+    </li>
+</ul>
+<div ng-if="loading" style="margin-top: 40px; text-align: center;">
+    <img src="img/loader.gif" alt="Loading..." srcset="">
+</div>
